@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="categoryTab" prefHeight="273.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoryController">
+   <children>
+      <TableView fx:id="itemTbCategoryList" layoutX="20.0" layoutY="26.0" prefHeight="195.0" prefWidth="287.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="56.0" text="Id" />
+            <TableColumn fx:id="tblName" prefWidth="214.0" text="Name" />
+         </columns>
+      </TableView>
+      <TextField fx:id="categoryNameField" layoutX="398.0" layoutY="26.0" prefHeight="25.0" prefWidth="209.0" promptText="Enter new category" />
+
+      <Button layoutX="398.0" layoutY="89.0" mnemonicParsing="false" onAction="#addCategory" prefHeight="25.0" prefWidth="209.0" text="Add Category" />
+      <Button layoutX="398.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteSelectedCategory" prefHeight="25.0" prefWidth="209.0" text="Delete Selected Item" />
+
+   </children>
+</AnchorPane>

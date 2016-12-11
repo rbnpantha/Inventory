@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginLayout" prefHeight="454.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+
+   <children>
+      <Label layoutX="265.0" layoutY="30.0" text="Admin Panel" textFill="#358385">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+
+      <TabPane  layoutX="21.0" layoutY="81.0" prefHeight="350.0" prefWidth="648.0" tabClosingPolicy="UNAVAILABLE">
+
+
+        <tabs>
+          <Tab fx:id="tabUser" text="    User    ">
+
+          		<content>
+          			<fx:include fx:id="UserTabPage" source="User.fxml" />
+          		</content>
+          </Tab>
+
+          <Tab fx:id="tabCategory" text="    Category    ">
+          		<content>
+          			<fx:include fx:id="CategoryTabPage1" source="Category.fxml" />
+          		</content>
+          </Tab>
+          <Tab fx:id="tabItem" text="     Item     ">
+          		<content>
+          			<fx:include fx:id="ItemTabPage" source="Item.fxml" />
+          		</content>
+          </Tab>
+          <Tab fx:id="tabSales" text="    Sales    ">
+          		<content>
+                    <fx:include fx:id="saleLayout" source="Sale.fxml" />
+          		</content>
+          </Tab>
+          <Tab fx:id="tabStock" text="    Stock     ">
+          		<content>
+          			<fx:include fx:id="CategoryTabPage" source="Stock.fxml" />
+          		</content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

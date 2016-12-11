@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+ <hibernate-mapping>
+ 
+ 	<class name="models.Customer" table="tbl_customers">
+ 	<id name="id">
+ 		<generator class="assigned"></generator>
+ 	
+ 	</id>
+ 	<property name="name"></property>
+ 	<property name="phoneNumber"></property>
+ 	<property name="address"></property>
+ 	 <property name="gender"></property>
+ 	<property name="purchased"></property>
+ 	<property name="status"></property>
+ 	<property name="city"></property>
+ 	<property name="country"></property>
+ 
+ 	
+ </class>
+ 
+ </hibernate-mapping>

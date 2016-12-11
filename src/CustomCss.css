@@ -1,0 +1,25 @@
+.root{
+    -fx-font-size: 10pt;
+    -fx-font-family: "Courier New";
+    -fx-base: #d5d6c2;
+    -fx-background: #e1e4cb;
+}
+
+.button{
+    -fx-background-color: #AB4642;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 6 6 6 6;
+}
+
+.label{
+    -fx-text-fill: #358385;
+    -fx-text-color: #d14408;
+}
+
+/*.tab-pane .tab-header-area*/ .tab-header-background {
+    -fx-background-color: #e1e4cb;
+}
+
+/*.tab-pane .tab-header-area .tab-header-background {
+    -fx-effect: null;
+}*/

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="356.0" prefWidth="657.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button layoutX="143.0" layoutY="293.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Back" />
+      <TextField layoutX="453.0" layoutY="119.0" />
+      <Label layoutX="354.0" layoutY="123.0" text="City" />
+      <TextField layoutX="453.0" layoutY="160.0" />
+      <Label layoutX="354.0" layoutY="164.0" text="Country" />
+      <TextField layoutX="453.0" layoutY="200.0" />
+      <Label layoutX="354.0" layoutY="204.0" text="Label" />
+      <Label layoutX="354.0" layoutY="86.0" text="Address" />
+      <TextField layoutX="453.0" layoutY="82.0" />
+      <Label layoutX="35.0" layoutY="242.0" text="Phone" />
+      <TextField layoutX="134.0" layoutY="238.0" />
+      <Label layoutX="35.0" layoutY="203.0" text="Status" />
+      <TextField layoutX="134.0" layoutY="199.0" />
+      <Label layoutX="35.0" layoutY="163.0" text="Purchased" />
+      <TextField layoutX="134.0" layoutY="159.0" />
+      <Label layoutX="35.0" layoutY="122.0" text="Name" />
+      <TextField layoutX="134.0" layoutY="118.0" />
+      <TextField layoutX="134.0" layoutY="82.0" />
+      <Label layoutX="35.0" layoutY="86.0" text="Id" />
+      <Button layoutX="408.0" layoutY="293.0" mnemonicParsing="false" text="Add New Customer" />
+      <Label layoutX="234.0" layoutY="25.0" text="New User" textFill="#358385">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

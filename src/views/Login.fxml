@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginLayout" prefHeight="333.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+
+	<children>
+		
+		<Label fx:id="lblUsername" layoutX="36.0" layoutY="117.0" prefHeight="17.0" prefWidth="108.0" text="Username:" />
+		<TextField fx:id="username" layoutX="207.0" layoutY="113.0" prefHeight="25.0" prefWidth="168.0" promptText="username" />
+		<Label fx:id="lblPassword" layoutX="36.0" layoutY="159.0" prefHeight="17.0" prefWidth="108.0" text="Password:" />
+		<PasswordField fx:id="password" layoutX="207.0" layoutY="154.0" onAction="#onEnter" prefHeight="25.0" prefWidth="168.0" promptText="password" />
+		<Button fx:id="btnCancel" layoutX="144.0" layoutY="235.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="108.0" text="  Cancel  " />
+		<Button fx:id="btnLogin" layoutX="310.0" layoutY="235.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="108.0" text="  Login  " />
+		<Label fx:id="lblTitle" layoutX="69.0" layoutY="31.0" prefHeight="20.0" prefWidth="329.0" text="Inventory and Sales Management System" textFill="#358385">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+		<Label fx:id="lblVersion" layoutX="180.0" layoutY="60.0" prefHeight="19.0" prefWidth="90.0" text="Version 1.0" textFill="#358385">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+	</children>
+</AnchorPane>

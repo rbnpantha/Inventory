@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="StockItemLayout" prefHeight="278.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StockController">
+   <children>
+      <TableView fx:id="stockTable" layoutX="9.0" layoutY="58.0" prefHeight="200.0" prefWidth="632.0">
+         <columns>
+            <TableColumn fx:id="itemsId" prefWidth="41.0" text="Id" />
+            <TableColumn fx:id="itemsCatId" prefWidth="99.66665649414062" text="Category" />
+            <TableColumn fx:id="itemsNameId" prefWidth="179.33334350585938" text="Name" />
+            <TableColumn fx:id="itemsUnitId" prefWidth="84.3333740234375" text="Unit" />
+            <TableColumn fx:id="itemsPriceId" prefWidth="98.6666259765625" text="Price" />
+            <TableColumn fx:id="itemsQuantity" minWidth="0.0" prefWidth="124.6666259765625" text="Quantity" />
+         </columns>
+      </TableView>
+      <Label layoutX="17.0" layoutY="19.0" prefHeight="20.0" prefWidth="155.0" text="Total items in stock" textFill="#ff4800">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalStockLabel" layoutX="200.0" layoutY="15.0" prefHeight="25.0" prefWidth="66.0" textFill="#002fff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ItemTestLayout" prefHeight="278.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ItemTestController">
+   <children>
+       <Button layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#addItemButton" text="  Add New Item  " />
+       <Button layoutX="197.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteSelectedItem" text="  Delete selected Item  " />
+
+       <TableView fx:id="itemTestTable" layoutX="10.0" layoutY="59.0" prefHeight="200.0" prefWidth="632.0">
+        <columns>
+          <TableColumn fx:id="itemsId" prefWidth="41.0" text="Id" />
+          <TableColumn fx:id="itemsCatId" prefWidth="131.0" text="Category" />
+            <TableColumn fx:id="itemsNameId" prefWidth="126.33331298828125" text="Name" />
+            <TableColumn fx:id="itemsUnitId" prefWidth="79.66668701171875" text="Unit" />
+            <TableColumn fx:id="itemsPriceId" prefWidth="62.0" text="Price" />
+            <TableColumn fx:id="itemsQuantity" prefWidth="96.0" text="Quantity" />
+            <TableColumn fx:id="itemsStatus" minWidth="0.0" prefWidth="94.0" text="Status" />
+
+        </columns>
+      </TableView>
+
+   </children>
+</AnchorPane>
